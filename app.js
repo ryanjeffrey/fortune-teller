@@ -8,7 +8,29 @@ const inputSection = document.getElementById('input-section');
 const userQuestion = document.getElementById('user-question');
 const askQuestionButton = document.getElementById('ask-question-btn');
 
-// let state
+const answers = [
+    'Yes, definitely',
+    'It is certain',
+    'It is decidedly so',
+    'Without a doubt',
+    'You may rely on it',
+    'As I see it, yes',
+    'Most Likely',
+    'Outlook good',
+    'Signs point to yes',
+    'Reply hazy, try again',
+    'Ask again later',
+    'Better not tell you now',
+    'Cannot predict now',
+    'Concentrate and ask again',
+    'Don’t count on it',
+    'My reply is no',
+    'My sources say no',
+    'Outlook not so good',
+    'Very doubtful',
+];
+
+console.log(answers);
 
 // set event listeners 
 askQuestionButton.addEventListener('click', () => {
@@ -19,7 +41,6 @@ function copyQuestion() {
     const question = userQuestion.value;
     questionDisplay.textContent = question;
 }
-
 
   // get user input
   // use user input to update state 
