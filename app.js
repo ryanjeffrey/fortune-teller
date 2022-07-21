@@ -30,8 +30,6 @@ const answers = [
     'Very doubtful',
 ];
 
-console.log(answers);
-
 // set event listeners 
 askQuestionButton.addEventListener('click', () => {
     copyQuestion();
@@ -48,9 +46,9 @@ function showRandomAnswer() {
     answerDisplay.textContent = randomAnswer;
 }
 
-function getRandomItem(array) {
-    const randomIndex = Math.floor(Math.random() * array.length);
-    const item = array[randomIndex];
+function getRandomItem(answers) {
+    const randomIndex = Math.floor(Math.random() * answers.length);
+    const item = answers[randomIndex];
     return item;
 }
   // get user input
