@@ -12,8 +12,14 @@ const askQuestionButton = document.getElementById('ask-question-btn');
 
 // set event listeners 
 askQuestionButton.addEventListener('click', () => {
-    console.log('button clicked');
+    copyQuestion();
 });
+
+function copyQuestion() {
+    const question = userQuestion.value;
+    questionDisplay.textContent = question;
+}
+
 
   // get user input
   // use user input to update state 
