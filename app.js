@@ -35,6 +35,7 @@ console.log(answers);
 // set event listeners 
 askQuestionButton.addEventListener('click', () => {
     copyQuestion();
+    showRandomAnswer();
 });
 
 function copyQuestion() {
@@ -42,6 +43,16 @@ function copyQuestion() {
     questionDisplay.textContent = question;
 }
 
+function showRandomAnswer() {
+    const randomAnswer = getRandomItem(answers);
+    answerDisplay.textContent = randomAnswer;
+}
+
+function getRandomItem(array) {
+    const randomIndex = Math.floor(Math.random() * array.length);
+    const item = array[randomIndex];
+    return item;
+}
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
