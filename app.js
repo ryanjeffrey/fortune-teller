@@ -11,6 +11,10 @@ const askQuestionButton = document.getElementById('ask-question-btn');
 // let state
 
 // set event listeners 
+askQuestionButton.addEventListener('click', () => {
+    console.log('button clicked');
+});
+
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
