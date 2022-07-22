@@ -59,7 +59,7 @@ function getRandomItem(answers) {
 function toggleVisibility() {
     inputSection.classList.add('hidden');
     anotherQuestionSection.classList.remove('hidden');
-    answerDisplay.classList.remove('hidden')
+    answerDisplay.classList.remove('hidden');
 }
 
 function toggleAnotherVisibility() {
