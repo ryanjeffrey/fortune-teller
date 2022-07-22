@@ -39,6 +39,10 @@ askQuestionButton.addEventListener('click', () => {
     toggleVisibility();
 });
 
+anotherQuestionButton.addEventListener('click', () => {
+    console.log('it works');
+});
+
 function copyQuestion() {
     const question = userQuestion.value;
     questionDisplay.textContent = question;
@@ -60,6 +64,3 @@ function toggleVisibility() {
     anotherQuestionSection.classList.remove('hidden');
 }
 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
