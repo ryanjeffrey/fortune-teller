@@ -48,6 +48,10 @@ textarea {
     grid-column: 1;
 }
 
+.hidden {
+    display: none;
+}
+
 footer {
 
 }
