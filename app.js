@@ -40,7 +40,7 @@ askQuestionButton.addEventListener('click', () => {
 });
 
 anotherQuestionButton.addEventListener('click', () => {
-    console.log('it works');
+    toggleAnotherVisibility();
 });
 
 function copyQuestion() {
@@ -62,5 +62,12 @@ function getRandomItem(answers) {
 function toggleVisibility() {
     inputSection.classList.add('hidden');
     anotherQuestionSection.classList.remove('hidden');
+}
+
+function toggleAnotherVisibility() {
+    answerDisplay.classList.add('hidden');
+    inputSection.classList.remove('hidden');
+    questionDisplay.textContent = '';
+    anotherQuestionSection.classList.add('hidden');
 }
 
