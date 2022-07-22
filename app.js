@@ -7,6 +7,8 @@ const answerDisplay = document.getElementById('answer-display');
 const inputSection = document.getElementById('input-section');
 const userQuestion = document.getElementById('user-question');
 const askQuestionButton = document.getElementById('ask-question-btn');
+const anotherQuestionButton = document.getElementById('ask-another-question-btn');
+const anotherQuestionSection = document.getElementById('another-question-section')
 
 const answers = [
     'Yes, definitely',
@@ -34,6 +36,7 @@ const answers = [
 askQuestionButton.addEventListener('click', () => {
     copyQuestion();
     showRandomAnswer();
+    toggleVisibility();
 });
 
 function copyQuestion() {
@@ -51,6 +54,12 @@ function getRandomItem(answers) {
     const item = answers[randomIndex];
     return item;
 }
+
+function toggleVisibility() {
+    inputSection.classList.add('hidden');
+    anotherQuestionSection.classList.remove('hidden');
+}
+
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
