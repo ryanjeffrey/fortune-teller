@@ -126,6 +126,21 @@ button:after {
     text-shadow: 3px 3px 4px black;
     font-size: 1.25em;
     z-index: 100;
+    opacity: 1;
+}
+
+.fade-in {
+    animation: fade-in 1s ease-out;
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .hidden {

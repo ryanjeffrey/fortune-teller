@@ -34,6 +34,7 @@ askQuestionButton.addEventListener('click', () => {
     copyQuestion();
     showRandomAnswer();
     toggleVisibility();
+    applyAnimations();
 });
 
 anotherQuestionButton.addEventListener('click', () => {
@@ -67,5 +68,9 @@ function toggleAnotherVisibility() {
     inputSection.classList.remove('hidden');
     questionDisplay.textContent = '';
     anotherQuestionSection.classList.add('hidden');
+}
+
+function applyAnimations() {
+    answerDisplay.classList.add('fade-in');
 }
 
