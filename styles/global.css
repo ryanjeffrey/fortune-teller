@@ -37,6 +37,15 @@ textarea {
     height: 120px;
 }
 
+#input-section label {
+    padding: 20px 0;
+}
+
+button {
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
 #crystal-ball {
     font-size: 15em;
     grid-row: 2;
