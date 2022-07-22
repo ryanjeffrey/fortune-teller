@@ -1,8 +1,5 @@
 // import functions and grab DOM elements
-// const questionSection = document.getElementById('question-section');
 const questionDisplay = document.getElementById('question-display');
-// const ballSection = document.getElementById('ball-section');
-// const crystalBall = document.getElementById('crystal-ball');
 const answerDisplay = document.getElementById('answer-display');
 const inputSection = document.getElementById('input-section');
 const userQuestion = document.getElementById('user-question');
