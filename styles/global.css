@@ -38,6 +38,7 @@ textarea {
 }
 
 #input-section label {
+    margin-top: -40px;
     padding: 20px 0;
 }
 
@@ -110,7 +111,8 @@ button:after {
 }
 
 #crystal-ball {
-    font-size: 15em;
+    margin-top: -160px;
+    height: 600px;
     grid-row: 2;
     grid-column: 1;
 }
