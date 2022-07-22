@@ -1,12 +1,11 @@
 // import functions and grab DOM elements
-const questionSection = document.getElementById('question-section');
 const questionDisplay = document.getElementById('question-display');
-const ballSection = document.getElementById('ball-section');
-const crystalBall = document.getElementById('crystal-ball');
 const answerDisplay = document.getElementById('answer-display');
 const inputSection = document.getElementById('input-section');
 const userQuestion = document.getElementById('user-question');
 const askQuestionButton = document.getElementById('ask-question-btn');
+const anotherQuestionButton = document.getElementById('ask-another-question-btn');
+const anotherQuestionSection = document.getElementById('another-question-section');
 
 const answers = [
     'Yes, definitely',
@@ -34,6 +33,11 @@ const answers = [
 askQuestionButton.addEventListener('click', () => {
     copyQuestion();
     showRandomAnswer();
+    toggleVisibility();
+});
+
+anotherQuestionButton.addEventListener('click', () => {
+    toggleAnotherVisibility();
 });
 
 function copyQuestion() {
@@ -51,6 +55,17 @@ function getRandomItem(answers) {
     const item = answers[randomIndex];
     return item;
 }
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+
+function toggleVisibility() {
+    inputSection.classList.add('hidden');
+    anotherQuestionSection.classList.remove('hidden');
+    answerDisplay.classList.remove('hidden');
+}
+
+function toggleAnotherVisibility() {
+    answerDisplay.classList.add('hidden');
+    inputSection.classList.remove('hidden');
+    questionDisplay.textContent = '';
+    anotherQuestionSection.classList.add('hidden');
+}
+
